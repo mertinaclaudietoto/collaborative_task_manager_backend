@@ -8,7 +8,9 @@ const { clearAndInsertData } = require("./src/config/initBase");
 const { DEFAULTDATA,APP } = require("./src/config/constant");
 
 // import route app
-const userRoutes = require("./src/routes/user.routes");
+const userRoutes = require("./src/routes/user.route");
+const ruleRoutes = require("./src/routes/rule.route");
+
 
 
 // conf app 
@@ -32,6 +34,8 @@ mongoose
 
 
 app.use(`/${APP.name}/users`, userRoutes);
+app.use(`/${APP.name}/rules`, ruleRoutes);
+
 
 // app port
 const PORT = process.env.PORT || 3000;
