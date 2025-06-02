@@ -1,7 +1,7 @@
 const { Types } = require('mongoose'); 
 const status = require("../models/status");
-const rule = require("../models/rule");
-const user = require("../models/user");
+const rule = require("../models/rule.model");
+const user = require("../models/user.model");
 const work = require("../models/work");
 
 const DEFAULTDATA = [
