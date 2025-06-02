@@ -3,6 +3,7 @@ const rule = require('./rule');
 const status = require('./status');
 const work = require('./work');
 const userSchema = new mongoose.Schema({
+  picture:{type: String, required: true},
   name: { type: String, required: true },
   login:{ type: String, required: true },
   passWord:{ type: String, required: true },
