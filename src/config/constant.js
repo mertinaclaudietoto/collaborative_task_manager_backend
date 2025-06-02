@@ -1,8 +1,8 @@
 const { Types } = require('mongoose'); 
-const status = require("../models/status");
+const status = require("../models/status.model");
 const rule = require("../models/rule.model");
 const user = require("../models/user.model");
-const work = require("../models/work");
+const work = require("../models/work.model");
 
 const DEFAULTDATA = [
     {model:status,data:[{_id:new Types.ObjectId("000000000000000000000001"),name:"active"},{_id:new Types.ObjectId("000000000000000000000002"),name:"inactive"}]},

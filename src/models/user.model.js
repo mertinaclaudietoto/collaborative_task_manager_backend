@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const rule = require('./rule.model');
-const status = require('./status');
-const work = require('./work');
+const status = require('./status.model');
+const work = require('./work.model');
 const userSchema = new mongoose.Schema({
   picture:{type: String, required: true},
   name: { type: String, required: true },

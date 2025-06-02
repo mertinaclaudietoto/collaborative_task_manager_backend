@@ -4,7 +4,7 @@ const apiResponse= require('../models/response');
 const getAll = async (req, res) => {
   try {
     const all = await service.getAll();
-    res.status(200).json(apiResponse.success(`this user is inactive`, all));
+    res.status(200).json(apiResponse.success(`select successfully`, all));
   } catch (err) {
     res.status(500).json(apiResponse.error(`The server encountered a problem. Please try again later.`, []));
   }
