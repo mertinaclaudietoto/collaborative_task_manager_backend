@@ -10,6 +10,10 @@ const { DEFAULTDATA,APP } = require("./src/config/constant");
 // import route app
 const userRoutes = require("./src/routes/user.route");
 const ruleRoutes = require("./src/routes/rule.route");
+const workRoutes = require("./src/routes/work.route");
+const statusRoutes = require("./src/routes/status.route");
+
+
 
 
 
@@ -35,6 +39,9 @@ mongoose
 
 app.use(`/${APP.name}/users`, userRoutes);
 app.use(`/${APP.name}/rules`, ruleRoutes);
+app.use(`/${APP.name}/status`, statusRoutes);
+app.use(`/${APP.name}/works`, workRoutes);
+
 
 
 // app port
