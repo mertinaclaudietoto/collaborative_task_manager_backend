@@ -8,7 +8,7 @@ class ApiResponse {
       return new ApiResponse('success', message, data);
     }
     static error(message, errors = []) {
-      return new ApiResponse('error', message, { errors });
+      return new ApiResponse('500', message, { errors });
     }
   }
   

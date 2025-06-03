@@ -7,7 +7,7 @@ const work = require("../models/work.model");
 const DEFAULTDATA = [
     {model:status,data:[{_id:new Types.ObjectId("000000000000000000000001"),name:"active"},{_id:new Types.ObjectId("000000000000000000000002"),name:"inactive"}]},
     {model:rule,data:[{_id:new Types.ObjectId("000000000000000000000001"),name:"admin"},{_id:new Types.ObjectId("000000000000000000000002"),name:"user"}]},
-    {model:work,data:[{_id:new Types.ObjectId("000000000000000000000001"),name:"PO"},{_id:new Types.ObjectId("000000000000000000000009"),name:"developper"}]},
+    {model:work,data:[{_id:new Types.ObjectId("000000000000000000000001"),name:"PO"},{_id:new Types.ObjectId("000000000000000000000002"),name:"developper"}]},
     {model:user,data:[{
         _id: new Types.ObjectId("000000000000000000000001"),
         picture:"https://asset.cloudinary.com/dcufspbrh/cd1a6dd972e7cd7698268c9eb26f1664",
@@ -17,6 +17,24 @@ const DEFAULTDATA = [
         status: new Types.ObjectId("000000000000000000000001"),
         rule: new Types.ObjectId("000000000000000000000001"),
         work: new Types.ObjectId("000000000000000000000001")
+        },{
+        _id: new Types.ObjectId("000000000000000000000002"),
+        picture:"https://asset.cloudinary.com/dcufspbrh/cd1a6dd972e7cd7698268c9eb26f1664",
+        name:"martina",
+        login:"mertinaclaudietoto@gmail.com",
+        passWord:"$2b$10$9scdzPACJsEvw.lxxjF.eO2HfaKLUFdxI824pFxDqiq105Cj32Smu",
+        status: new Types.ObjectId("000000000000000000000001"),
+        rule: new Types.ObjectId("000000000000000000000002"),
+        work: new Types.ObjectId("000000000000000000000002")
+        },{
+        _id: new Types.ObjectId("000000000000000000000003"),
+        picture:"https://asset.cloudinary.com/dcufspbrh/cd1a6dd972e7cd7698268c9eb26f1664",
+        name:"albert",
+        login:"mertinaclaudietoto@gmail.com",
+        passWord:"$2b$10$9scdzPACJsEvw.lxxjF.eO2HfaKLUFdxI824pFxDqiq105Cj32Smu",
+        status: new Types.ObjectId("000000000000000000000002"),
+        rule: new Types.ObjectId("000000000000000000000002"),
+        work: new Types.ObjectId("000000000000000000000002")
         }]}
 ]
 const KEYS = {
